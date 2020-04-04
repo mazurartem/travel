@@ -1,0 +1,24 @@
+.whychooseus {
+  background-image: url(../images/section-1.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &__content {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box-left {
+    width: 540px;
+    padding-top: 85px;
+  }
+  &__title {
+    @include text($H500, 400, $white);
+    margin-bottom: 63px;
+  }
+  &__text {
+    font-family: $secondary-font;
+    @include text($H200, 400, $white);
+    margin-bottom: 37px;
+  }
+}

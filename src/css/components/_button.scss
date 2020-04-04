@@ -1,0 +1,9 @@
+.button {
+  width: 225px;
+  height: 60px;
+  text-align: center;
+  font-family: $base-font;
+  @include text($H200, 400, $white);
+  background-color: $blue;
+  border: none;
+}
