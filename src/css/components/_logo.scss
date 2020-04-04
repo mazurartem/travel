@@ -1,0 +1,4 @@
+.logo {
+  font-family: $secondary-font;
+  @include text($H600, 700, $white);
+}

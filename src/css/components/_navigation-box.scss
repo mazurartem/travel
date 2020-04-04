@@ -1,0 +1,21 @@
+.navigation-box {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    padding-top: 28px;
+    padding-bottom: 35px;
+    @include text($H400, bold, $white);
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @include text($H100, bold, $white);
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  &__box {
+    padding-left: 43%;
+    padding-top: 10px;
+  }
+}

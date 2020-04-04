@@ -1,0 +1,78 @@
+.header {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &__container {
+    min-height: 100vh;
+  }
+  &__box {
+    width: 650px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  &__logo {
+    margin: 0 auto;
+    width: 315px;
+    text-align: center;
+    padding-top: 200px;
+  }
+  &__text {
+    width: 315px;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 16px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+    font-family: $secondary-font;
+    @include text($H300, 400, $white);
+  }
+
+  &__form-search {
+    display: flex;
+    width: 650px;
+    height: 60px;
+    margin-bottom: 120px;
+  }
+  &__input {
+    width: 504px;
+    height: 60px;
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    padding-left: 127px;
+    color: $grey;
+    letter-spacing: 3px;
+  }
+
+  &__button-box {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    background-color: white;
+  }
+
+  &__button {
+    width: 146px;
+    height: 56px;
+    border: none;
+    outline: none;
+    background-color: $blue;
+    font-family: $base-font;
+    @include text($H100, 400, $white);
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+  &__img {
+    padding-left: 10px;
+    transform: translate(5px, 7px);
+  }
+  &__scroll-box {
+    display: flex;
+    flex-direction: column;
+  }
+}

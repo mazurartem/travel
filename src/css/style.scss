@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans&display=swap');
-@import './core/vars';
-@import './core/mixins';
-@import './core/common';
+@import url("https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans&display=swap");
+@import "./core/vars";
+@import "./core/mixins";
+@import "./core/common";
+
+@import "./components/header";
+@import "./components/scroll";
+@import "./components/arrow-down";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/navigation-box";

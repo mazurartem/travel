@@ -1,0 +1,6 @@
+.scroll {
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: $secondary-font;
+  @include text($H100, 400, $white);
+}

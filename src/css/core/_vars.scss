@@ -1,12 +1,26 @@
 // Colors
-$white: #FFFFFF;
-$light: #FEFEFE;
-$grey-light: #E8E8E8;
-$grey: #CCCCCC;
+$white: #ffffff;
+$light: #fefefe;
+$grey-light: #e8e8e8;
+$grey: #cccccc;
 $dark: #333333;
 $darker: #232323;
-$blue: #5474FD;
+$blue: #5474fd;
 
 // Fonts
-$base-font: 'Aleo', serif;
-$secondary-font: 'Josefin Sans', sans-serif;
+$base-font: "Aleo", serif;
+$secondary-font: "Josefin Sans", sans-serif;
+
+$max-width: 1770px;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H600: calcRem(48px);
+$H500: calcRem(36px);
+$H400: calcRem(24px);
+$H300: calcRem(22px);
+$H200: calcRem(16px);
+$H100: calcRem(14px);
