@@ -40,6 +40,7 @@
     height: 60px;
     border: none;
     outline: none;
+    padding-left: 20px;
   }
   ::placeholder {
     padding-left: 127px;
@@ -56,6 +57,7 @@
   }
 
   &__button {
+    padding-bottom: 5px;
     width: 146px;
     height: 56px;
     border: none;
@@ -63,9 +65,9 @@
     background-color: $blue;
     font-family: $base-font;
     @include text($H100, 400, $white);
-  }
-  &__button:hover {
-    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__img {
     padding-left: 10px;
