@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   &__logo {
+    padding-left: 30px;
     padding-top: 28px;
     padding-bottom: 30px;
     @include text($H400, bold, $white);
@@ -9,6 +10,7 @@
   &__list {
     display: flex;
     flex-direction: row;
+    padding-right: 30px;
     padding-top: 35px;
     padding-bottom: 30px;
     @include text($H100, bold, $white);
