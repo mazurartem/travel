@@ -1,0 +1,58 @@
+.tourist {
+  background-image: url(../images/tourist.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &__title {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+    @include text($H500, 400, $white);
+  }
+  &__box-wrapper {
+    padding-bottom: 200px;
+  }
+  &__box {
+    padding-left: 30px;
+
+    height: 284px;
+    display: flex;
+  }
+  &__box-image-wrapper {
+    flex: 0 0 40%;
+    position: relative;
+  }
+  &__box-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+  }
+  &__box-description {
+    background-color: $dark;
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  &__box-title {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    @include text($H200, 400, $grey);
+    font-family: $secondary-font;
+  }
+  &__box-text {
+    @include text($H200, 400, $grey);
+    font-family: $secondary-font;
+    line-height: 1.4;
+  }
+  &__sign {
+    font-size: 40px;
+    color: $blue;
+    line-height: 10px;
+  }
+}

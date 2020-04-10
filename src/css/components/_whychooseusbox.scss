@@ -5,11 +5,51 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
   &__box-first {
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: column;
+  }
+  &__box-first-image-wrapper {
+    margin: 0 auto;
+    padding-bottom: 34px;
+  }
+  &__box-first-image {
+  }
+  &__box-first-text {
+    @include text($H500, 400, $grey);
+  }
+  &__box-second {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__box-second-image-wrapper {
+    margin: 0 auto;
+    padding-bottom: 34px;
+  }
+
+  &__box-second-image {
+  }
+  &__box-second-text {
+    @include text($H500, 400, $grey);
+  }
+  &__box-third {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__box-third-image-wrapper {
+    margin: 0 auto;
+    padding-bottom: 34px;
+  }
+  &__box-third-image {
+  }
+  &__box-third-text {
+    @include text($H500, 400, $grey);
   }
 }

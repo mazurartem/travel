@@ -1,0 +1,58 @@
+.footer {
+  background-color: $footer-color;
+  &__box {
+    width: 165px;
+    margin: 0 auto;
+  }
+  &__logo {
+    @include text($H400, 700, $white);
+    letter-spacing: 1px;
+    padding-top: 120px;
+  }
+  &__text {
+    font-family: $secondary-font;
+    @include text($H200, 400, $white);
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color: $grey-light;
+    padding-bottom: 50px;
+    &:not(last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__facebook-svg {
+    fill: #ffffff;
+    &:hover {
+      fill: #157dc3;
+    }
+  }
+  &__twitter {
+    fill: #ffffff;
+    &:hover {
+      fill: #40abe1;
+    }
+  }
+  &__linkedin {
+    fill: #ffffff;
+    &:hover {
+      fill: #0073b0;
+    }
+  }
+  &__youtube {
+    fill: #ffffff;
+    &:hover {
+      fill: #ff011d;
+    }
+  }
+  &__pinterest {
+    fill: #ffffff;
+    &:hover {
+      fill: #e60023;
+    }
+  }
+}
