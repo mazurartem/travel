@@ -7,71 +7,114 @@
     min-height: 100vh;
   }
   &__box {
-    width: 650px;
+    width: 260px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
+    @media screen and (min-width: $screen-tablet) {
+      width: 650px;
+    }
   }
   &__logo {
+    padding-top: 150px;
     margin: 0 auto;
-    width: 315px;
-    text-align: center;
-    padding-top: 200px;
+    width: 240px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 315px;
+      text-align: center;
+      padding-top: 200px;
+    }
   }
   &__text {
-    width: 315px;
-    text-align: center;
-    letter-spacing: 4px;
-    padding-top: 16px;
-    margin: 0 auto;
-    margin-bottom: 52px;
+    width: 240px;
     font-family: $secondary-font;
-    @include text($H300, 400, $white);
+    @include text($H250, 400, $white);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 42px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 315px;
+      letter-spacing: 4px;
+      padding-top: 16px;
+      margin-bottom: 52px;
+      @include text($H300, 400, $white);
+    }
   }
 
   &__form-search {
     display: flex;
-    width: 650px;
-    height: 60px;
-    margin-bottom: 120px;
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 150px;
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: row;
+      width: 650px;
+      height: 60px;
+      margin-bottom: 120px;
+    }
   }
   &__input {
-    width: 504px;
-    height: 60px;
+    display: flex;
+    width: 100%;
+    height: 32px;
     border: none;
     outline: none;
     padding-left: 20px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 504px;
+      height: 60px;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+    }
   }
   ::placeholder {
-    padding-left: 127px;
     color: $grey;
-    letter-spacing: 3px;
+    text-align: center;
+    @media screen and (min-width: $screen-tablet) {
+      letter-spacing: 3px;
+      padding-left: 127px;
+      text-align: left;
+    }
   }
 
   &__button-box {
-    padding-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-bottom: 2px;
-    background-color: white;
+    padding-top: 16px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-bottom: 2px;
+      background-color: white;
+    }
   }
 
   &__button {
-    padding-bottom: 5px;
-    width: 146px;
-    height: 56px;
-    border: none;
-    outline: none;
     background-color: $blue;
     font-family: $base-font;
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
     @include text($H100, 400, $white);
     &:hover {
       cursor: pointer;
     }
+    @media screen and (min-width: $screen-tablet) {
+      width: 146px;
+      height: 56px;
+    }
   }
   &__img {
     padding-left: 10px;
-    transform: translate(5px, 7px);
+    transform: translate(5px, 5px);
+    @media screen and (min-width: $screen-tablet) {
+      transform: translate(5px, 7px);
+    }
   }
   &__scroll-box {
     display: flex;
