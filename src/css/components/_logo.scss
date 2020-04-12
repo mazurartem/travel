@@ -1,4 +1,8 @@
 .logo {
   font-family: $secondary-font;
-  @include text($H600, 700, $white);
+  @include text($H500, 700, $white);
+  text-align: center;
+  @media screen and (min-width: $screen-tablet) {
+    @include text($H600, 700, $white);
+  }
 }
