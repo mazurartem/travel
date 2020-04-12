@@ -33,8 +33,12 @@
     }
   }
   &__title {
-    @include text($H500, 400, $grey-light);
-    margin-bottom: 63px;
+    @include text($H400, 400, $grey-light);
+    margin-bottom: 32px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 63px;
+      @include text($H500, 400, $grey-light);
+    }
   }
   &__text-first {
     font-family: $secondary-font;

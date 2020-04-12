@@ -5,23 +5,46 @@
   position: relative;
 
   &__title {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 24px;
+    padding-bottom: 32px;
     text-align: center;
-    @include text($H500, 400, $white);
+    @include text($H400, 400, $white);
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H500, 400, $white);
+      padding-top: 24px;
+      padding-bottom: 100px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      padding-top: 120px;
+    }
   }
   &__box-wrapper {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-bottom: 200px;
+    }
   }
   &__box {
-    padding-left: 30px;
-
-    height: 284px;
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $screen-desktop) {
+      display: flex;
+      flex-direction: row;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 284px;
+      display: flex;
+    }
   }
   &__box-image-wrapper {
-    flex: 0 0 40%;
+    height: 284px;
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: $screen-desktop) {
+      height: 284px;
+      width: 445px;
+    }
   }
   &__box-image {
     position: absolute;
@@ -35,9 +58,17 @@
     object-position: right bottom;
   }
   &__box-description {
+    width: 100%;
     background-color: $dark;
-    padding-left: 60px;
+    padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 30px;
+    @media screen and (min-width: $screen-desktop) {
+      width: 665px;
+      background-color: $dark;
+      padding-left: 60px;
+      padding-right: 30px;
+    }
   }
   &__box-title {
     padding-top: 50px;

@@ -44,6 +44,9 @@
     line-height: 1.5;
   }
   &__button {
-    margin-bottom: 50px;
+    margin-bottom: 16px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 50px;
+    }
   }
 }
