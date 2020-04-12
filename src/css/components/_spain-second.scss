@@ -4,17 +4,27 @@
   background-position: center center;
   position: relative;
   &__card-box {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 229px;
-    padding-bottom: 100px;
-    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 229px;
+      padding-bottom: 100px;
+      padding-right: 30px;
+    }
   }
+
   &__card {
     background-image: url(../images/RectangleS2.png);
-    width: 540px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 540px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
   &__title {
     padding-top: 51px;

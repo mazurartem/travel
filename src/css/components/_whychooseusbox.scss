@@ -8,28 +8,39 @@
     @media screen and (min-width: $screen-tablet) {
       display: flex;
       flex-direction: row;
-      margin: 0 auto;
+
       justify-content: space-around;
       padding-top: 100px;
       padding-bottom: 120px;
     }
   }
   &__box-first {
+    padding-top: 24px;
+    margin: 0 auto;
     width: 220px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 0px;
+    }
   }
   &__box-first-image-wrapper {
     margin: 0 auto;
-    padding-bottom: 34px;
+    padding-bottom: 37px;
   }
   &__box-first-text {
     @include text($H500, 400, $grey);
+    text-align: center;
   }
   &__box-second {
+    padding-top: 24px;
+    margin: 0 auto;
     width: 220px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 0px;
+    }
   }
   &__box-second-image-wrapper {
     margin: 0 auto;
@@ -37,11 +48,19 @@
   }
   &__box-second-text {
     @include text($H500, 400, $grey);
+    text-align: center;
   }
   &__box-third {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0 auto;
     width: 220px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
   &__box-third-image-wrapper {
     margin: 0 auto;
@@ -49,5 +68,6 @@
   }
   &__box-third-text {
     @include text($H500, 400, $grey);
+    text-align: center;
   }
 }

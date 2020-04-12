@@ -1,5 +1,5 @@
 .button {
-  width: 225px;
+  width: 100%;
   height: 60px;
   text-align: center;
   font-family: $base-font;
@@ -11,5 +11,8 @@
   cursor: pointer;
   &:hover {
     background-color: $button-hover;
+  }
+  @media screen and (min-width: $screen-tablet) {
+    width: 225px;
   }
 }
