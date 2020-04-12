@@ -1,23 +1,47 @@
 .navigation-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__logo {
-    padding-left: 30px;
-    padding-top: 28px;
-    padding-bottom: 30px;
-    @include text($H400, bold, $white);
+    display: none;
+
+    @media screen and (min-width: $screen-tablet) {
+      display: block;
+      padding-left: 30px;
+      padding-top: 28px;
+
+      @include text($H400, bold, $white);
+    }
   }
   &__list {
     display: flex;
-    flex-direction: row;
-    padding-right: 30px;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    @include text($H100, bold, $white);
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    @include text($H50, bold, $white);
+    @media screen and (min-width: $screen-tablet) {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      padding-right: 30px;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      @include text($H100, bold, $white);
+    }
   }
   &__item {
-    &:not(:last-child) {
-      margin-right: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: $screen-tablet) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
 }

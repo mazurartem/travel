@@ -3,11 +3,16 @@
 
   &__container {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: space-around;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: space-around;
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
   }
   &__box-first {
     width: 220px;
@@ -17,8 +22,6 @@
   &__box-first-image-wrapper {
     margin: 0 auto;
     padding-bottom: 34px;
-  }
-  &__box-first-image {
   }
   &__box-first-text {
     @include text($H500, 400, $grey);
@@ -32,9 +35,6 @@
     margin: 0 auto;
     padding-bottom: 34px;
   }
-
-  &__box-second-image {
-  }
   &__box-second-text {
     @include text($H500, 400, $grey);
   }
@@ -46,8 +46,6 @@
   &__box-third-image-wrapper {
     margin: 0 auto;
     padding-bottom: 34px;
-  }
-  &__box-third-image {
   }
   &__box-third-text {
     @include text($H500, 400, $grey);
