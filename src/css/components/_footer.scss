@@ -13,6 +13,7 @@
     }
   }
   &__text {
+    text-align: center;
     font-family: $secondary-font;
     @include text($H200, 400, $white);
     padding-top: 16px;
@@ -25,7 +26,7 @@
     color: $grey-light;
     padding-bottom: 50px;
     &:not(last-child) {
-      margin-right: 20px;
+      margin-right: 22px;
     }
   }
   &__facebook-svg {

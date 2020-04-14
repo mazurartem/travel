@@ -39,6 +39,7 @@
   }
   &__text {
     margin-bottom: 50px;
+    text-align: justify;
     @include text($H200, 400, $light);
     font-family: $secondary-font;
     line-height: 1.5;
